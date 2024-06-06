@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import record_temperature, get_temperatures
+from .views import potenciometro, get_temperatures
 
 urlpatterns = [
-    path('record/', record_temperature, name='record_temperature'),
+    path('record/', potenciometro, name='record_temperature'),
     path('temperatures/', get_temperatures, name='get_temperatures'),
 ]
