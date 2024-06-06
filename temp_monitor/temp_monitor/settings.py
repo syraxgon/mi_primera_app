@@ -78,11 +78,11 @@ WSGI_APPLICATION = 'temp_monitor.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('DB_NAME'),
-        'USER': os.environ.get('DB_USER'),
-        'PASSWORD': os.environ.get('DB_PASSWORD'),
-        'HOST': os.environ.get('DB_HOST'),
-        'PORT': os.environ.get('DB_PORT'),
+        'NAME': os.environ.get('DB_NAME', 'railway'),
+        'USER': os.environ.get('DB_USER', 'postgres'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'eXUQKGqSnAfDkHFyKzTiPWVzjYhkOQOM'),
+        'HOST': os.environ.get('DB_HOST', 'viaduct.proxy.rlwy.net'),
+        'PORT': os.environ.get('DB_PORT', '54287'),
     }
 }
 
