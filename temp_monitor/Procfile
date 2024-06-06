@@ -1,1 +1,1 @@
-web: gunicorn temp_monitor.wsgi
+web: gunicorn temp_monitor.temp_monitor.wsgi
